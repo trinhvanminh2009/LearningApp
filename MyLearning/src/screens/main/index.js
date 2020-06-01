@@ -1,0 +1,1 @@
+export { default as CallDetailScreen, } from './callDetail/CallDetailVM'
