@@ -28,6 +28,7 @@ const icons = {
 }
 
 const images = {
+  splash: require('./images/splash.png'),
   common: {
     logo: require('./images/woo-sender-logo.png'),
   },

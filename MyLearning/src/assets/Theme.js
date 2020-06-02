@@ -153,6 +153,7 @@ const Theme = R.mergeDeepRight(
       '.text-label-margin': { marginTop: 24, marginBottom: 8, },
       '.text-detail-grey-nobel': { color: Colors.greyNobel, },
       '.text-detail-black': { color: Colors.black, },
+      '.text-ocean-blue': { color: Colors.oceanBlue, },
       '.text-detail-grey': { color: Colors.greyMortar, },
       '.text-detail-white': { color: Colors.white, },
       '.text-detail-grey-small': { color: Colors.greyMortar, lineHeight: 17, fontSize: 12, },
@@ -171,8 +172,24 @@ const Theme = R.mergeDeepRight(
         fontSize: 15,
         lineHeight: 21,
       },
+      '.margin-top-30':{
+        marginTop: 30,
+      },
+      '.margin-top-20':{
+        marginTop: 20,
+      },
       '.text-common-margin': {
         marginLeft: 20,
+      },
+      '.text-common-margin-right': {
+        marginRight: 20,
+      },
+
+      '.text-common-margin-30': {
+        marginLeft: 20,
+      },
+      '.text-common-margin-right-30': {
+        marginRight: 30,
       },
       '.text-select-placeholder-common': {
         color: Colors.black,

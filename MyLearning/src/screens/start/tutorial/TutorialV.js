@@ -1,9 +1,9 @@
 import {
-  ActivityIndicator, Image, Platform, StatusBar, StyleSheet, Button,
-  Text,
-  View,
-} from 'react-native'
+  ActivityIndicator, Image, Platform, StatusBar, StyleSheet,
 
+  SafeAreaView,
+} from 'react-native'
+import { Text, View, Button } from 'native-base'
 import { Colors, Fonts, Images, Metrics, } from '@src/assets'
 import React, { useEffect, } from 'react'
 import { useNavigation, } from 'react-navigation-hooks'
@@ -20,51 +20,49 @@ const TutorialV = ({
 
   return (
 
-    <View style={styles.containerSignIn}>
+    <View style={styles.tutorialContainer}>
+      <SafeAreaView>
+        <Text text-right text-detail-white text-common-margin-right-30 text-body-2 semi-bold>{'skip'}</Text>
+        <Image source={Images.splash} resizeMode={"stretch"} style={styles.splash} />
+        <View  style = {styles.containerBottom}>
+          <Text text-detail-white text-header-title-big semi-bold text-center>{'Best online coaches'}</Text>
+          <Text text-detail-white text-center margin-top-20>{'get some fantasct online videos and content\nto learn more and gain extra knowledge'}</Text>
+          <Button content-center style={styles.buttonNext}>
+            <Text text-ocean-blue>{'Next'}</Text>
+          </Button>
+        </View>
 
+      </SafeAreaView>
 
 
     </View>
   )
 }
 const styles = StyleSheet.create({
-  btnSignIn: {
-    backgroundColor: Colors.blueDeepSky,
-    height: 51,
-    marginBottom: 20,
-    marginTop: 32,
 
-  },
-  containerAction: {
-    backgroundColor: Colors.white,
-    borderRadius: 5,
-    paddingBottom: 20,
-    paddingHorizontal: 20,
-    paddingTop: 8,
-  },
-  containerLogo: {
-    marginBottom: 45,
-    marginTop: Metrics.screen.height > 700 ? 100 : '10%',
-  },
-  containerSignIn: {
+  tutorialContainer: {
     width: '100%',
     height: '100%',
-    backgroundColor: Colors.redCharm,
+    backgroundColor: Colors.oceanBlue,
   },
-  imageLogo: {
-    height: 77,
-    width: 218,
+  splash: {
+    marginTop: 20,
+    width: '95%',
   },
-  labelStyle: {
-    color: Colors.black,
+  buttonNext: {
+    width: 137,
+    borderRadius: 21,
+    backgroundColor: Colors.white,
+    marginTop: 30,
+
+
   },
-  textInputStyle: {
-    color: Colors.black,
-  },
-  textTitle: {
-    color: Colors.white,
-    marginBottom: 45,
-  },
+  containerBottom: {
+    marginTop: '15%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+
 })
 
 export default TutorialV

@@ -1,6 +1,9 @@
 export default {
   black: 'black',
-  blueConflower: '#3590EB',
+  oceanBlue: '#0253b3',
+
+
+
   blueCornflower: '#44B3F2',
   blueDarker: '#0068FF',
   blueDeepSky: '#00AFFF',
